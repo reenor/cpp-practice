@@ -20,16 +20,16 @@ endfor
 
 using namespace std;
 
-void findSmallestLargest(const int *arr, const int n, int *smallest, int *largest)
+void findSmallestLargest(const int *arr, const int n, int &smallest, int &largest)
 {
-    *largest = *smallest = *arr;
+    largest = smallest = *arr;
     
     for (int i = 1; i < n; i++)
     {
-        if (*smallest > *(arr + i))
-            *smallest = *(arr + i);
-        if (*largest < *(arr + i))
-            *largest = *(arr + i);
+        if (smallest > *(arr + i))
+            smallest = *(arr + i);
+        if (largest < *(arr + i))
+            largest = *(arr + i);
     }
 }
 
@@ -40,7 +40,9 @@ int main(void)
 
     const int n = sizeof(arr) / sizeof(int);
 
-    findSmallestLargest(arr, n, &smallest, &largest);
+    findSmallestLargest(arr, n, smallest, largest);
     cout << "Smallest one: " << smallest << endl;
     cout << "Largest one: " << largest << endl;
+
+    return 0;
 }
