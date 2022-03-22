@@ -9,10 +9,9 @@ return false
 #include <iostream>
 using namespace std;
 
-bool isMultiple(const long n, const long m){
-    if (n % m == 0){
-        return true;
-    }
+bool isMultiple(long n, long m){
+    if (n <= 0 || m <= 0) return false;
+    if (n % m == 0) return true;
     return false;
 }
 
