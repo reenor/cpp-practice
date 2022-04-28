@@ -47,4 +47,6 @@ protected:
     long turn;
 };
 
+void R2_8_10();
+
 #endif //CHAPTER02_R2_8_2_10_H
