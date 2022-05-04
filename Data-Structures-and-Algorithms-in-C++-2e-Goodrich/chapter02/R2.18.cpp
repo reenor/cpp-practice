@@ -19,3 +19,13 @@ void R2_18 () {
     std::cout << "\nPair 4: " << pair_4.getFirst() << "\t" << pair_4.getSecond();
     std::cout << "\nPair 5: " << pair_5.getFirst() << "\t" << pair_5.getSecond();
 }
+
+template <class F, class S>
+F Pair<F, S>::getFirst() const {
+    return first;
+}
+
+template <class F, class S>
+S Pair<F, S>::getSecond() const {
+    return second;
+}
