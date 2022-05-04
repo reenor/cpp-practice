@@ -9,6 +9,7 @@
 #include "includes/C2.1.h"
 #include "includes/C2.4.h"
 #include "includes/C2.5.h"
+#include "includes/C2.6.h"
 
 
 int main() {
@@ -23,6 +24,7 @@ int main() {
 //    C2_1();
 //    C2_4();
 //    C2_5();
+    C2_6();
 
     return 0;
 }
