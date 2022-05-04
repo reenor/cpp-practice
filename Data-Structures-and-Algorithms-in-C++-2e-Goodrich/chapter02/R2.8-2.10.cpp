@@ -56,7 +56,7 @@ FibonacciProgression::FibonacciProgression(long f, long s)
     : Progression(f), second(s), turn(0) {}
 
 long FibonacciProgression::firstValue(){
-    ++turn;
+    turn = 1;
     cur = first;
     return cur;
 }
